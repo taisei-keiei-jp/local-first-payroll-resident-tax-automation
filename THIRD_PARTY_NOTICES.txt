@@ -1,0 +1,119 @@
+第三者ソフトウェア表示
+==============================
+
+1. pypdfium2 5.11.0 / PDFium 151.0.7920.0
+--------------------------------------------------
+用途: PDFページのローカル画像化（プレビューとOCR入力）
+入手先: https://pypi.org/project/pypdfium2/5.11.0/
+ソース: https://github.com/pypdfium2-team/pypdfium2
+ライセンス:
+- pypdfium2本体: Apache License 2.0 または BSD 3-Clause
+- ドキュメント・例: CC BY 4.0
+- PDFiumとビルド依存: BSD系ほか、実際のWindows x64 wheelに付属する各ライセンス
+再配布: 著作権表示・ライセンス表示の維持が必要です。
+同梱原文: licenses/pypdfium2-5.11.0/
+このフォルダは、実際に検証した pypdfium2 5.11.0 Windows x64 wheelの
+dist-info/licenses をそのまま複製したもので、PDFiumバイナリのBUILD_LICENSESも含みます。
+
+2. Tesseract 5.2.0 (.NET wrapper / Windows x64 native engine)
+--------------------------------------------------
+用途: 日本語・英語のローカルOCR
+入手先: https://www.nuget.org/packages/Tesseract/5.2.0
+ソース: https://github.com/charlesw/tesseract
+ライセンス: Apache License 2.0
+著作権: Copyright 2012-2020 Charles Weld
+再配布: Apache-2.0の条件に従い、ライセンス原文と著作権表示を維持します。
+NuGetパッケージSHA-256: 202D82FC7C7D8384DF7DA57206D5E1F456CCDABD648C46E67CDFAA3A911D4795
+同梱原文・メタデータ:
+- tools/tesseract/licenses/CHARLESW_TESSERACT_LICENSE.txt
+- tools/tesseract/licenses/Tesseract.5.2.0.nuspec
+
+3. Tesseract OCR 5.2.0 native engine
+--------------------------------------------------
+ソース: https://github.com/tesseract-ocr/tesseract
+ライセンス: Apache License 2.0
+同梱原文: tools/tesseract/licenses/TESSERACT_LICENSE.txt
+
+4. Leptonica 1.82.0
+--------------------------------------------------
+用途: Tesseractの画像入力処理
+ソース: https://github.com/DanBloomberg/leptonica/tree/1.82.0
+ライセンス: BSD 2-Clause
+再配布: ソースまたはバイナリ再配布時に著作権表示、条件、免責条項を維持します。
+同梱原文: tools/tesseract/licenses/LEPTONICA_LICENSE.txt
+
+5. tessdata_fast (jpn.traineddata / eng.traineddata)
+--------------------------------------------------
+入手先・ソース: https://github.com/tesseract-ocr/tessdata_fast
+ライセンス: Apache License 2.0
+同梱原文: tools/tesseract/licenses/TESSDATA_LICENSE.txt
+jpn.traineddata SHA-256: 1F5DE9236D2E85F5FDF4B3C500F2D4926F8D9449F28F5394472D9E8D83B91B4D
+eng.traineddata SHA-256: 7D4322BD2A7749724879683FC3912CB542F19906C83BCC1A52132556427170B2
+
+6. プロジェクト専用Tesseract CLI
+--------------------------------------------------
+tools/tesseract/source/TesseractCli.cs からビルドした tesseract.exe は、
+pytesseractから上記Tesseractエンジンを呼び出すためのこのアプリ固有のCLIです。
+ソースを同梱し、Windows全体へのTesseractインストールは行いません。
+
+7. pdfplumber 0.11.9
+--------------------------------------------------
+用途: 文字情報を持つPDFの表・セル座標取得
+ソース: https://github.com/jsvine/pdfplumber
+ライセンス: MIT License
+再配布: 著作権表示とライセンス文を維持します。
+同梱原文: licenses/pdfplumber-0.11.9-LICENSE.txt
+
+8. pdfminer.six 20251230
+--------------------------------------------------
+用途: pdfplumberが使用するPDF文字・座標解析
+ソース: https://github.com/pdfminer/pdfminer.six
+ライセンス: MIT License
+再配布: 著作権表示とライセンス文を維持します。
+同梱原文: licenses/pdfminer.six-20251230-LICENSE.txt
+
+9. cryptography 49.0.0
+--------------------------------------------------
+用途: pypdfによるAES暗号化PDFの復号
+入手先: https://pypi.org/project/cryptography/49.0.0/
+ソース: https://github.com/pyca/cryptography
+実ビルド: cryptography-49.0.0-cp311-abi3-win_amd64.whl
+SHA-256: E5DFC1E64DE5677CEC922FFA8DA89C546D0415BF6EFDF081842E5D44C84E1F0E
+ライセンス: Apache License 2.0 OR BSD 3-Clause
+再配布: 選択したライセンスの条件に従い、著作権表示とライセンス文を維持します。
+Windows wheelはOpenSSLを静的リンクしており、Windows全体へのOpenSSL導入は不要です。
+同梱原文: licenses/cryptography-49.0.0/
+
+10. cffi 2.1.0
+--------------------------------------------------
+用途: cryptographyのCPython向け必須依存
+入手先: https://pypi.org/project/cffi/2.1.0/
+ソース: https://github.com/python-cffi/cffi
+実ビルド: cffi-2.1.0-cp314-cp314-win_amd64.whl
+SHA-256: 1B96BFE2C4BD825681B7D311AD6D9B7280A091F43E8F63DA5729638083CD3BFB
+ライセンス: MIT-0
+再配布: 同梱ライセンス文を維持します。
+同梱原文: licenses/cffi-2.1.0/LICENSE
+
+11. pycparser 3.0
+--------------------------------------------------
+用途: cffiのCPython向け依存
+入手先: https://pypi.org/project/pycparser/3.0/
+ソース: https://github.com/eliben/pycparser
+実ビルド: pycparser-3.0-py3-none-any.whl
+SHA-256: B727414169A36B7D524C1C3E31839A521725078D7B2FF038656844266160A992
+ライセンス: BSD 3-Clause
+再配布: 著作権表示とライセンス文を維持します。
+同梱原文: licenses/pycparser-3.0/LICENSE
+
+12. 同梱していないランタイム
+--------------------------------------------------
+Tesseract同梱版は Microsoft .NET Framework 4.7以上と Microsoft Visual C++
+2015-2022 x64 Runtime を必要とします。これらMicrosoft製ランタイムは本フォルダに
+複製・同梱していません。不足するPCではMicrosoft公式配布物を利用者側で導入してください。
+
+不採用ビルドについて
+--------------------------------------------------
+UB Mannheim配布の tesseract-ocr-w64-setup-5.4.0.20240606.exe は調査のみ行い、
+そのビルドがGPL-2.0の libjbig-0.dll へ直接依存することを確認したため、
+非公開販売アプリには採用せず、その実行ファイル・DLLを同梱していません。

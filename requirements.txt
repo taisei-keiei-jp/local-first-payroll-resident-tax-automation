@@ -1,0 +1,13 @@
+streamlit
+pandas
+reportlab
+openpyxl
+pypdf
+Pillow
+pypdfium2==5.11.0
+pytesseract==0.3.13
+pdfplumber==0.11.9
+pdfminer.six==20251230
+cryptography==49.0.0
+cffi==2.1.0
+pycparser==3.0

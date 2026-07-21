@@ -1,0 +1,16 @@
+{
+  "company_code": "DEMO001",
+  "company_name": "株式会社サンプルワークス",
+  "legal_company_name": "株式会社サンプルワークス",
+  "municipality": "デモ市",
+  "fiscal_year": "令和8年度",
+  "region": "千葉県",
+  "business_type": "デモ事業",
+  "health_insurance_branch": "千葉県",
+  "employment_insurance_type": "建設の事業",
+  "closing_day": "末日",
+  "payment_day": 10,
+  "payment_timing": "翌月",
+  "provider": "OpenAI Build Week Demo",
+  "customer_label_provider": "Fictional Demo"
+}

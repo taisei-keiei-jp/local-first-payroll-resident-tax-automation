@@ -170,7 +170,8 @@ Codex helped with:
 
 The final Codex test run completed:
 
-- Passed: 20
+- Integrated tests passed: 5
+- Required checks covered: 22
 - Failed: 0
 
 ## How GPT-5.6 Was Used
